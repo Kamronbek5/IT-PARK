@@ -1,0 +1,147 @@
+
+.contain {
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.Payments {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.Course1, .Course2 {
+    // width: 1400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 26px 0px 26px 40px;
+    display: flex;
+    gap: 50px;
+}
+
+
+.Course1img {
+    width: 420px;
+    border-radius: 16px;
+    height: 240px;
+    object-fit: cover;
+    &__parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 27px 0 0 65px;
+        margin-bottom: 24px;
+    }
+}
+
+.Course1__info{
+    display: flex;
+    gap: 61px   ;
+    &__name {
+        color: var(--Color-Black, #374557);
+font-size: 24px;
+font-weight: 700;
+    }
+    &__cost, &__title {
+       color: #374557;
+font-size: 24px;
+font-weight: 600; 
+    }
+    &__shop {
+        color: #A098AE;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    &__sum {
+        color: #166199;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: -9px;
+    }
+    &__book {
+        font-size: 18px;
+        color: #A098AE;
+        font-weight: 400;
+        margin-top: 21px;
+    }
+    &__link {
+        color: #166199;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 28px;
+    }
+}
+
+.Course1__info__text {
+    margin-bottom: 30px;
+}
+
+.Course1__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Course1__success , .Course1__nosuccess {
+    border-radius: 15px;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    justify-content: center;
+    padding: 12px 25px;
+    align-items: center;
+}
+
+.Course1__info__text {
+    color: #374557;
+font-size: 24px;
+font-weight: 600;
+}
+
+.Course1__success__title {
+    color: #A098AE;
+font-size: 18px;
+font-weight: 500;
+margin: 0 70px 0 20px;
+}
+
+.Course1__success__button {
+    border: none;
+    color: #FFF;
+font-size: 14px;
+font-weight: 500;
+padding: 8px 19px;
+border-radius: 10px;
+background: #166199;
+}
+
+.Course__success__icon {
+    font-size: 32px;
+    color: #166199;
+}
+
+.Course__nosuccess__icon {
+    font-size: 32px;
+    color: #166199;
+}
+
+.Course1__nosuccess__button {
+    color: #166199;
+font-size: 14px;
+font-weight: 500;
+border-radius: 10px;
+border: 2px solid #166199;
+padding: 8px 19px;
+}
+
+.Course2 {
+    color:  #374557;
+    font-size: 24px;
+    font-weight: 700;
+}

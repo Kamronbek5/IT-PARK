@@ -1,0 +1,142 @@
+
+.table {
+    display: flex;
+    gap: 52px;
+}
+
+.ant-picker-calendar {
+    width: 800px;
+    height: 880px;
+    border-radius: 20px;
+}
+
+.ant-picker-calendar-header {
+    margin-right: 10px; 
+}
+
+.tableright {
+    &__title {
+        color:  #374557;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;    
+    }
+    .week {
+        border-radius: 16px;
+        background:  #FFF;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 32px 32px 32px 32px;
+        &__day {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        &__title{
+            color: #A098AE;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .day{
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 14px 15px;
+            border-radius: 8px;
+            background: #374557;
+        }
+        .day1{
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 14px 15px;
+            border-radius: 8px;
+            background: #166199;
+            margin-left: 2px;
+        }
+        .day2{
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 14px 15px;
+            border-radius: 8px;
+            background: #FEC64F    ;
+            margin-left: 10px;
+        }
+    }
+    .courses__title {
+        margin: 40px 0 15px 0;
+        color:  #374557;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .course__date__parent {
+        display: flex;
+        align-items: center;
+    }
+
+    .course {
+        position: relative;
+        border-radius: 16px;
+background: var(--Color-White, #FFF);
+padding: 24px 50px 8px 40px;
+margin-bottom: 24px;
+        &__title {
+            color: var(--Color-Black, #374557);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        &__date {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &__icon {
+                color: #A098AE;
+                font-size: 24px;
+            }
+            &__name {
+                color: var(--Color-Gray-1, #A098AE);
+                font-size: 11px;
+                font-weight: 400;
+            }
+        }
+        .px {
+            height: 16px;
+            background: #DBDBDB;
+            width: 1px;
+            margin: 0 16px 0 24px;
+        }
+        &__profil {
+            margin-top: 35px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        &__icon {
+            width: 32px;
+            height: 32px;
+            background-color: #DBDBDB;
+            border-radius: 8px;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 16px;
+            height: 179px;
+            border-radius: 16px 0px 0px 16px;
+            background: var(--Color-Black, #374557);
+        }
+        &:nth-child(2)::before{
+            background: #166199;
+        }
+        &:nth-child(3)::before{
+            background: #FEC64F;
+        }
+    }
+}
