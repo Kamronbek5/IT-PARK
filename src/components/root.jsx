@@ -1,7 +1,7 @@
 import RootLogo from "../assets/image/rootIcon.png";
 import rootList from "../utils/rootList";
 import { Route, Routes, Link } from "react-router-dom";
-import HomePage from "../pages/home";
+import HomePage from "../pages/home/components";
 import CoursesPage from "../pages/courses";
 import TeachersPage from "../pages/teachers";
 import ProfilePage from "../pages/profile";
