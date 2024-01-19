@@ -1,13 +1,13 @@
 import RootLogo from "../assets/image/rootIcon.png";
 import rootList from "../utils/rootList";
 import { Route, Routes, Link } from "react-router-dom";
-import HomePage from "../pages/home/components";
 import CoursesPage from "../pages/courses";
 import TeachersPage from "../pages/teachers";
 import ProfilePage from "../pages/profile";
 import TablePage from "../pages/table"
 import PaymentsPage from "../pages/payments"
 import PageOne from "../pages/courses/components/PageOne";
+import HomePage from "../pages/home";
 
 const Root = () => {
   return (
@@ -27,7 +27,7 @@ const Root = () => {
       </div>
       <div className="routes">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage/>} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/table" element={<TablePage/>}/>
           <Route path="/teachers" element={<TeachersPage />} />

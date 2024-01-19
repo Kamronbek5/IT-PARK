@@ -7,14 +7,20 @@
 .profil {
     display: flex;
     gap: 30px;
+    margin-bottom: 100px;
+}
+
+.profileft {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .profileft__top {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    padding: 25px;
+    margin-bottom: 30px;
     &__icon {
         width: 100px;
         height: 100px;
@@ -31,13 +37,19 @@
         color: var(--Color-Gray-1, #A098AE);
         font-size: 18px;
         font-weight: 400;
+        margin-bottom: 20px;
     }
     &__skills {
         display: flex;
         gap: 10px;
     }
-    &__icons, &__sert {
-        padding: 15px 40px 15px 15px;
+    &__icons {
+        padding: 15px 51px 15px 15px;
+        background-color: #dbdbdb;
+        border-radius: 16px;
+    }
+    &__sert {
+        padding: 15px 29px 15px 15px;
         background-color: #dbdbdb;
         border-radius: 16px;
     }
@@ -50,5 +62,62 @@
         color:  #374557;
         font-size: 32px;
         font-weight: 700;
+    }
+}
+
+.profileft__bottom {
+    &__title, &__title2 {
+        color: var(--Color-Black, #374557);
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &__title2 {
+        margin-top: 20px;
+    }
+    &__icons {
+        display: flex;
+        gap: 10px;
+    }
+    &__icon {
+        border-radius: 16px;
+background: var(--Color-Gray-3, #FAFAFA);
+padding: 10px;
+    }
+    &__texts {
+        padding: 20px;
+        border-radius: 8px;
+background: var(--Color-Gray-3, #FAFAFA);
+    }
+    &__text {
+        width: 300px;
+        text-align: justify;
+    }
+}
+
+.profilright {
+    margin-right: 30px;
+    &__courses {
+        display: flex;
+        gap: 30px;
+        &__comp, &__prog {
+            padding: 20px 25px;
+            border-radius: 24px;
+            background: var(--Color-White, #FFF);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        &__text1 {
+            color: var(--Color-Black, #374557);
+            font-size: 25px;
+            font-weight: 700;
+        }
+        &__text2 {
+            color: var(--Color-Black, #374557);
+            font-size: 12px;
+            font-weight: 400;
+            width: 130px;
+        }
     }
 }
