@@ -1,11 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import PageOneLeft from "./PageOneLeft";
 import PageOneRight from "./PageOneRight";
 import { useEffect, useState } from "react";
 import { Spin } from "antd";
+import useLanguage from "../../../hooks/useLanguage";
+
 
 const PageOne = () => {
+  const translate = useLanguage()
   const [loading , setloading] = useState(false)
   useEffect(() => {
     setloading(true)
@@ -25,11 +27,11 @@ const PageOne = () => {
         :
         <div className="page-one">
         <div className="progress__link">
-          <Link to={"/"}>Bosh sahifa</Link> /
-          <Link to={"/courses"}>Mening kurslarim</Link>
+          <Link to={"/"}>{translate("main")}</Link> /
+          <Link to={"/courses"}>{translate("mycou")}</Link>
         </div>
         <div className="page-one__title">
-          <h2>Web va grafik dizayn</h2>
+          <h2>{translate("web")}</h2>
         </div>
         <div className="page-one__info">
           <PageOneLeft />

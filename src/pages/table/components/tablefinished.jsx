@@ -7,12 +7,14 @@ import {
 } from "@ant-design/icons";
 import CoursesIcon1 from "../../../assets/image/coursesIcon1.png";
 import { Progress } from "antd";
+import useLanguage from "../../../hooks/useLanguage";
 
 const TableFinished = () => {
+  const translate = useLanguage()
   return (
     <div className="progress">
       <div className="progress__title">
-        <h2>Tugallangan</h2>
+        <h2>{translate("tug")}</h2>
       </div>
       <div className="progress__cards">
         {finished2.map((item) => (
@@ -43,7 +45,7 @@ const TableFinished = () => {
                   <i>
                     <CheckCircleOutlined />
                   </i>
-                  <p>Tugallangan</p>
+                  <p>{translate("tug")}</p>
                 </div>
               </div>
               <div className="card__profil">

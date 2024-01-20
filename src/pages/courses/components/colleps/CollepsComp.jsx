@@ -1,5 +1,4 @@
 import { CaretRightOutlined } from "@ant-design/icons";
-import React from "react";
 import { Collapse, theme } from "antd";
 import CollepsVideo from "./CollepsVideo";
 

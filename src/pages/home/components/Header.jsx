@@ -1,12 +1,14 @@
-import React from "react";
 import CardIcon1 from "../../../assets/image/CardIcon1.png";
 import CardBgImg from "../../../assets/image/CardBgIcon.png";
 import CardIcon2 from "../../../assets/image/CardIcon2.png";
+import useLanguage from "../../../hooks/useLanguage";
+
 
 const Header = () => {
+  const translate = useLanguage()
   return (
     <div className="header__comp">
-      <h2 className="header__comp__title">Uyga Vazifa</h2>
+      <h2 className="header__comp__title">{translate("hw")}</h2>
       <div className="header__cards">
         <div className="header__card">
           <img className="header__card__bg" src={CardBgImg} alt="" />
@@ -15,14 +17,14 @@ const Header = () => {
           </div>
           <div className="header__card__info">
             <div className="info__title">
-              <h2>Web va grafik dizayn</h2>
+              <h2>{translate("web")}</h2>
             </div>
             <p className="info__text">
-              O'qituvchi:{" "}
+            {translate("teacher")}{" "}
               <span className="info__text__span">Humoyun Madrahimov</span>
             </p>
             <div className="info__btn">
-              <button>Darsni ko'rish</button>
+              <button>{translate("lesee")}</button>
             </div>
           </div>
         </div>
@@ -36,11 +38,11 @@ const Header = () => {
               <h2>SMM</h2>
             </div>
             <p className="info__text">
-              O'qituvchi:{" "}
+            {translate("teacher")}{" "}
               <span className="info__text__span">Humoyun Madrahimov</span>
             </p>
             <div className="info__btn">
-              <button>Darsni ko'rish</button>
+              <button>{translate("lesee")}</button>
             </div>
           </div>
         </div>

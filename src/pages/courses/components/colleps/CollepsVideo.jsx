@@ -1,4 +1,3 @@
-import React from "react";
 import { collepsData } from "../../../../utils/pageOneData";
 
 const CollepsVideo = () => {

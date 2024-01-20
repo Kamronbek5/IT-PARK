@@ -3,7 +3,6 @@ export const languageEnam = {
     RU: "ru",
 };
 
-
 export const getLocalStorage = (str) => {
     return localStorage.getItem(str)
 }

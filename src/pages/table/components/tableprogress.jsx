@@ -7,12 +7,14 @@ import {
 } from "@ant-design/icons";
 import CoursesIcon1 from "../../../assets/image/coursesIcon1.png";
 import { Progress } from 'antd';
+import useLanguage from '../../../hooks/useLanguage';
 
 const ProgressComp2 = () => {
+  const translate = useLanguage()
   return (
     <div className="progress">
       <div className="progress__title">
-        <h2>Jarayonda</h2>
+        <h2>{translate("jar")}</h2>
       </div>
       <div className="progress__cards">
         {progress2.map((item) => (
@@ -43,7 +45,7 @@ const ProgressComp2 = () => {
                   <i>
                     <LoadingOutlined />
                   </i>
-                  <p>Jarayonda</p>
+                  <p>{translate("jar")}</p>
                 </div>
                 <div className="card__rangeNumber">
                   <p>4/10</p>

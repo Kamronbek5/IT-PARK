@@ -1,7 +1,8 @@
-import React from "react";
 import PageLeftTabs from "./Tabs/PageLeftTabs";
+import useLanguage from "../../../hooks/useLanguage";
 
 const PageOneLeft = () => {
+  const translate = useLanguage()
   return (
     <div className="page-one__left">
       <div className="page-one__left__video">
@@ -15,7 +16,7 @@ const PageOneLeft = () => {
           allowfullscreen
         ></iframe>
         <h1 className="page-one__left__title">
-          Mavzu: Adobe photoshop panelining instrumentlar paneli
+        {translate("adobe")}
         </h1>
       </div>
       <div className="page-one__tabs">

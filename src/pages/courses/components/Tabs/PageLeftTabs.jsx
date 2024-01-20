@@ -1,4 +1,3 @@
-import React from "react";
 import { Tabs } from "antd";
 import TabOne from "./TabOne";
 import TabTwo from "./TabTwo";

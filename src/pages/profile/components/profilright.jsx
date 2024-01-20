@@ -3,7 +3,10 @@ import Degree from '../../../assets/icons/degree'
 import Arrow from '../../../assets/icons/arrow'
 import Clock from '../../../assets/icons/clock'
 import { Progress, Space } from 'antd';
+import useLanguage from "../../../hooks/useLanguage";
+
 const Profilright = () => {
+  const translate = useLanguage()
   return (
     <div className="profilright">
       <div className="profilright__courses">
@@ -11,7 +14,7 @@ const Profilright = () => {
       <Degree/>
       <div className="profilright__courses__texts">
         <h1 className="profilright__courses__text1">100</h1>
-        <h1 className="profilright__courses__text2">Courses Completed</h1>
+        <h1 className="profilright__courses__text2">{translate("kurs")}</h1>
       </div>
       <i className="profilright__courses__icon2"><Arrow/></i>
       </Link>
@@ -19,7 +22,7 @@ const Profilright = () => {
       <Clock/>
       <div className="profilright__courses__texts">
         <h1 className="profilright__courses__text1">34</h1>
-        <h1 className="profilright__courses__text2">Courses In Progress</h1>
+        <h1 className="profilright__courses__text2">{translate('prog')}</h1>
       </div>
       <i className="profilright__courses__icon2"><Arrow/></i>
       </Link>
@@ -27,13 +30,25 @@ const Profilright = () => {
       <div className="profilright__current">
         <div className="profilright__current__UI">
     <Space wrap>
-      <Progress strokeLinecap="butt" type="circle" percent={80} />
+    <Progress strokeLinecap="butt" type="circle" percent={80} />
     </Space>
+    <div className="profilright__current__UI__right">
+      <p className="profilright__current__UI__right__text">{translate('class')}</p>
+      <h1 className="profilright__current__UI__right__title">UI Design Beginner</h1>
+      <p className="profilright__current__UI__right__text">{translate('kurslar')}</p>
+      <h1 className="profilright__current__UI__right__title">90 / 110</h1>
+    </div>
         </div>
-        <div className="profilright__current__UX">
-        <Space wrap>
-      <Progress strokeLinecap="butt" type="circle" percent={62} />
+        <div className="profilright__current__UI">
+    <Space wrap>
+    <Progress strokeLinecap="butt" type="circle" percent={62} />
     </Space>
+    <div className="profilright__current__UI__right">
+      <p className="profilright__current__UI__right__text">{translate('class')}</p>
+      <h1 className="profilright__current__UI__right__title">UI Design Beginner</h1>
+      <p className="profilright__current__UI__right__text">{translate('kurslar')}</p>
+      <h1 className="profilright__current__UI__right__title">90 / 110</h1>
+    </div>
         </div>
       </div>
     </div>
