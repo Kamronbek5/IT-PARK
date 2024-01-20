@@ -1,33 +1,19 @@
-import { useEffect, useState } from "react";
-import { Spin } from "antd";
 import MenuBar from "./components/menuBar";
 import Root from "./components/root";
+import useAuthentication from "./hooks/useAuth";
+import LoginPage from "./pages/login";
 
 const App = () => {
-  const [loading , setloading] = useState(false)
-  useEffect(() => {
-    setloading(true)
-    setTimeout(() => {
-      setloading(false)
-    },2000)
-  },[])
-  return (
+  const { isLoggedIn } = useAuthentication();
+  return  ( 
+    isLoggedIn ?
     <div>
-      {
-        loading ? 
-        <div className="Loading">
-          <Spin tip="Loading" size="large">
-        <div className="content" />
-         </Spin>
-        </div>
-        :
-        <div>
         <Root />
         <MenuBar />
-      </div>
-      }
-    </div>
-  );
+    </div> 
+   : <LoginPage/> )
+  
+      
 }
 
 export default App;

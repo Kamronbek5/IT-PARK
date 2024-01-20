@@ -95,6 +95,6 @@ const Degree = (props) => (
         <stop offset={1} stopColor="#FFD877" />
       </linearGradient>
     </defs>
-  </svg>
+  </svg >
 )
 export default Degree
