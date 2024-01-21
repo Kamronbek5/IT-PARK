@@ -2,7 +2,6 @@ import {
   AppstoreOutlined,
   FolderOpenOutlined,
   CalendarOutlined,
-  UsergroupAddOutlined,
   UserOutlined,
   DollarOutlined,
 } from "@ant-design/icons";

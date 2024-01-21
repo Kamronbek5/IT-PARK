@@ -2,7 +2,6 @@ import RootLogo from "../assets/image/rootIcon.png";
 import rootList from "../utils/rootList";
 import { Route, Routes, Link } from "react-router-dom";
 import CoursesPage from "../pages/courses";
-import TeachersPage from "../pages/teachers";
 import ProfilePage from "../pages/profile";
 import TablePage from "../pages/table"
 import PaymentsPage from "../pages/payments"
