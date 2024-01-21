@@ -28,18 +28,12 @@ const rootList = [
   },
   {
     id: 4,
-    title: "O’qituvchilar",
-    icon: <UsergroupAddOutlined />,
-    path:"/teachers"
-  },
-  {
-    id: 5,
     title: "Profil",
     icon: <UserOutlined />,
     path:"/profile"
   },
   {
-    id: 6,
+    id: 5,
     title: "Mening to’lovlarim",
     icon: <DollarOutlined />,
     path:"/payments"

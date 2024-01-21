@@ -22,6 +22,7 @@ const MenuBar = () => {
                         onChange={handlyChange}>
                         <option value='uz'>O'zbekcha</option>
                         <option value='ru'>Русский</option>
+                        <option value='eng'>English</option>
                     </select>
         <i>
           <MessageOutlined />

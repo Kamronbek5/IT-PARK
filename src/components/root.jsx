@@ -30,7 +30,6 @@ const Root = () => {
           <Route path="/" element={<HomePage/>} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/table" element={<TablePage/>}/>
-          <Route path="/teachers" element={<TeachersPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/page-one" element={<PageOne/>}/>
           <Route path="/payments" element={<PaymentsPage/>}/>

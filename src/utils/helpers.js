@@ -1,6 +1,7 @@
 export const languageEnam = {
     UZ: "uz",
     RU: "ru",
+    ENG: "eng",
 };
 
 export const getLocalStorage = (str) => {
