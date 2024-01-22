@@ -1,19 +1,18 @@
+import { useState } from "react";
 import MenuBar from "./components/menuBar";
 import Root from "./components/root";
-import useAuthentication from "./hooks/useAuth";
-import LoginPage from "./pages/login";
+import Auth from "./Auth";
 
 const App = () => {
-  const { isLoggedIn } = useAuthentication();
-  return  ( 
-    isLoggedIn ?
-    <div>
-        <Root />
-        <MenuBar />
-    </div> 
-   : <LoginPage/> )
-  
-      
+  const [log, setlog] = useState(true);
+  return log ? (
+      <div>
+          <Root />
+          <MenuBar onFalse={() => setlog(false)} />
+      </div>
+  ) : (
+      <Auth onTrue={() => setlog(true)} />
+  );
 }
 
 export default App;

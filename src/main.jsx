@@ -7,10 +7,10 @@ import UserProvider from "./context/userContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
-    <LanguageProvider>
-    <UserProvider>
-      <App />
-    </UserProvider>
-    </LanguageProvider>
+        <LanguageProvider>
+            <UserProvider> 
+                <App/>
+            </UserProvider>
+        </LanguageProvider>
     </BrowserRouter>
 );
