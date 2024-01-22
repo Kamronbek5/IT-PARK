@@ -4,7 +4,7 @@ import { usePostRequest } from "../../hooks/request";
 import { Urls } from "../../utils/urls";
 import { UserContext } from "../../context/userContext";
 import { useContext } from "react";
-const LoginPage= () => {
+const LoginPage = () => {
   const loginPost = usePostRequest({ url: Urls.auth.login });
   
    const { setTokens } = useContext(UserContext);
