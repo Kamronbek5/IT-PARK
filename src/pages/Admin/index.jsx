@@ -1,5 +1,4 @@
-import {  UserOutlined,
-} from "@ant-design/icons";
+
 
 const AdminPage = ({ onTrue }) => {
   return (
@@ -10,6 +9,9 @@ const AdminPage = ({ onTrue }) => {
               Logout
           </button>
           </div>
+          <button className="change-btn">
+            Change
+          </button>
       </>
   );
 }
