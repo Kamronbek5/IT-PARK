@@ -59,7 +59,8 @@ const AdminPage = ({ onTrue }) => {
                     <h1
                         className='adminlogo'
                         style={{
-                            fontSize: collapsed ? "15px" : "25px",
+                            fontSize: collapsed ? "15px" : "30px",
+                            transition: collapsed ? "0.1s" : "0.5s",
                         }}>
                         Praktikum
                     </h1>
@@ -67,7 +68,8 @@ const AdminPage = ({ onTrue }) => {
                         className='adminlogo2'
                         style={{
                             fontSize: collapsed ? "10px" : "15px",
-                            margin: collapsed ? "0 0 0 32px" : "0 0 0 59px",
+                            margin: collapsed ? "-5px 0 0 32px" : "-10px 0 0 82px",
+                            transition: collapsed ? "0.1s" : "0.5s",
                         }}>
                         academy
                     </h1>

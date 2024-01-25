@@ -48,12 +48,24 @@ ul.ant-menu.ant-menu-root.ant-menu-vertical.ant-menu-dark.ant-menu-inline-collap
     background-color: #166199;
 }
 
+:where(.css-dev-only-do-not-override-mtd4dw).ant-menu-dark.ant-menu-submenu>.ant-menu {
+    background-color: #166199;
+}
+
 .adminlogo_parent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 0 40px 0;
+}
+
+:where(.css-dev-only-do-not-override-mtd4dw).ant-tooltip .ant-tooltip-inner {
+    background-color: #166199;
+}
+
+:where(.css-dev-only-do-not-override-mtd4dw).ant-tooltip .ant-tooltip-arrow::after {
+    background-color: #166199;
 }
 
 .adminlogo {
