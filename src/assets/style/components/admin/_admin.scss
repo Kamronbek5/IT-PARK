@@ -7,3 +7,60 @@
     border-radius: 10px;
     margin-left: 46.7%;
 }
+
+:where(.css-dev-only-do-not-override-mtd4dw).ant-menu-dark {
+    background-color: #166199;
+}
+
+:where(.css-dev-only-do-not-override-mtd4dw).ant-layout .ant-layout-sider-trigger {
+    background-color: #166199;
+}
+
+:where(.css-dev-only-do-not-override-mtd4dw).ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+    background-color: #166199;
+}
+
+// .ant-layout-sider {
+//     flex: 0 0 300px;
+//     min-width: 300px;
+//     max-width: 300px;
+//     width: 300px;
+// }
+// .ant-layout-sider-trigger {
+//     flex: 0 0 300px;
+//     min-width: 300px;
+//     max-width: 300px;
+//     width: 300px;
+// }
+
+.adminlogo_parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.adminlogo {
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+}
+
+.adminlogo2 {
+    // position: absolute;
+    font-size: 15px;
+    color: #00FFA3;
+        // top: 53px;
+        // right: 41px;
+}
+
+.Logout {
+    color: #fff;
+    background-color: #166199;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
