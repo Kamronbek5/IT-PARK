@@ -7,7 +7,7 @@ import useLanguage from "../../../hooks/useLanguage";
 const Header = () => {
   const translate = useLanguage()
   return (
-    <div className="header__comp">
+    <div className="header__comp resp__contain">
       <h2 className="header__comp__title">{translate("hw")}</h2>
       <div className="header__cards">
         <div className="header__card">

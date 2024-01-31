@@ -36,13 +36,7 @@ const MenuBar = ({ onFalse }) => {
           </button>
           <div className='menuBar__icons'>
               <Drawer
-                  title={
-                      <img
-                          src={RootLogo}
-                          className="drawerlogo"
-                          alt=''
-                      />
-                  }
+                  title={<img src={RootLogo} className='drawerlogo' alt='' />}
                   onClose={onClose}
                   placement='left'
                   width='80%'
