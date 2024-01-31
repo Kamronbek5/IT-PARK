@@ -24,15 +24,17 @@ const handlyChange = (event) => {
                     <option value='ru'>Рус</option>
                     <option value='eng'>Eng</option>
                 </select>
-                <i className='modalicons'>
-                    <MessageOutlined />
-                </i>
-                <i className='modalicons'>
-                    <BellOutlined />
-                </i>
-                <i className='modalicons'>
-                    <SettingOutlined />
-                </i>
+                <div className='modalicons__list'>
+                    <i className='modalicons'>
+                        <MessageOutlined />
+                    </i>
+                    <i className='modalicons'>
+                        <BellOutlined />
+                    </i>
+                    <i className='modalicons'>
+                        <SettingOutlined />
+                    </i>
+                </div>
                 <div onClick={() => onFalse()} className='user-modal__btn'>
                     <Link className='Link'>Login</Link>
                 </div>
