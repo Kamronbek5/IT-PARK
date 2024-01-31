@@ -6,6 +6,12 @@
   width: 100%;
   padding: 18px 32px;
   z-index: 995;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 500px) {
+      padding: 15px 20px;
+  }
 
   &__icons {
     display: flex;
@@ -14,6 +20,10 @@
     color: #a098ae;
     gap: 28px;
     font-size: 16px;
+    @media (max-width: 500px) {
+      justify-content: space-evenly   ;
+      gap: 10px;
+  }
 
     i{
       cursor: pointer;
@@ -26,5 +36,50 @@
     color: #fff;
     border-radius: 10px;
     font-size: 16px;
+  }
+}
+
+.opendrawer {
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #166199;
+}
+
+.drawerlogo {
+  width: 200px;
+  @media (max-width: 260px) {
+      width: 120px;
+  }
+  @media (max-width: 350px) {
+      width: 150px;
+  }
+  @media (max-width: 230px) {
+      width: 90px;
+  }
+  @media (max-width: 200px) {
+      width: 80px;
+  }
+
+}
+
+:where(.css-dev-only-do-not-override-mtd4dw).ant-drawer {
+  display: none;
+  @media (max-width: 500px) {
+    display: block;
+  }
+}
+
+.menuicons {
+  display: block;
+@media (max-width: 500px) {
+      display: none;
+  }
+}
+
+.header-hat_select {
+  @media (max-width: 500px) {
+      display: none;
   }
 }

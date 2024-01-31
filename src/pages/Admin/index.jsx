@@ -88,9 +88,9 @@ const AdminPage = ({ onTrue }) => {
                         padding: 0,
                         background: colorBgContainer,
                     }}>
-                    <button className='Logout' onClick={() => onTrue()}>
+                    <Link to='/' className='Logout' onClick={() => onTrue()}>
                         Logout
-                    </button>
+                    </Link>
                 </Header>
                 <Content
                     style={{

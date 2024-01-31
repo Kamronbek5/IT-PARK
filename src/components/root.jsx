@@ -10,7 +10,7 @@ import HomePage from "../pages/home";
 
 const Root = () => {
   return (
-    <div className="root">
+    <>
       <div className="root__left">
         <div className="root__left__logo">
           <img src={RootLogo} alt="" />
@@ -34,7 +34,7 @@ const Root = () => {
           <Route path="/payments" element={<PaymentsPage/>}/>
         </Routes>
       </div>
-    </div>
+      </>
   );
 };
 

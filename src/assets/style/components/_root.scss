@@ -11,8 +11,21 @@
   background: #fff;
   z-index: 999;
 
+  @media (max-width: 500px) {
+    display: none;
+  }
+
   &__logo {
     margin: 0 20px;
+  }
+}
+
+:where(.css-dev-only-do-not-override-mtd4dw).ant-drawer .ant-drawer-body { 
+  @media (max-width: 500px) {
+    padding: 10px;
+  }
+  @media (max-width: 250px) {
+    padding: 5px;
   }
 }
 
@@ -20,8 +33,10 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 212px;
   margin: 34px auto;
+  @media (max-width: 500px) {
+    margin: 20px auto;
+  }
 }
 
 .root__item {
@@ -34,6 +49,18 @@
   cursor: pointer;
   border-radius: 16px;
   transition: 0.5s;
+  @media (max-width: 500px) {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+  @media (max-width: 265px) {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  @media (max-width: 230px) {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
 
   &:hover {
     background: #166199;
@@ -45,4 +72,9 @@
 .routes {
   margin-left: 295px;
   margin-top: 94px;
+
+  @media (max-width: 500px) {
+      margin-left: 0px;
+  }
 }
+
