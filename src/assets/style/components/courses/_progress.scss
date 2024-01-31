@@ -25,6 +25,9 @@
   margin: 28px 0 46px;
   overflow-y: auto;
   padding-bottom: 8px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 }
 
 .progress__card {
@@ -33,12 +36,54 @@
   border-radius: 14px;
   padding: 20px 21px;
   position: relative;
+  @media (max-width: 430px) {
+    width: 350px;
+  }
+  @media (max-width: 400px) {
+    width: 320px;
+  }
+  @media (max-width: 350px) {
+    width: 280px;
+  }
+  @media (max-width: 310px) {
+    width: 250px;
+  }
+  @media (max-width: 290px) {
+    width: 220px;
+  }
+  @media (max-width: 270px) {
+    width: 200px;
+  }
+}
+
+.ant-progress-outer {
+  @media (max-width: 430px) {
+    width: 280px !important;
+  }
+  @media (max-width: 400px) {
+    width: 250px !important;
+  }
+  @media (max-width: 350px) {
+    width: 220px !important;
+  }
+  @media (max-width: 310px) {
+    width: 200px !important;
+  }
+  @media (max-width: 290px) {
+    width: 170px !important;
+  }
+  @media (max-width: 270px) {
+    width: 150px !important;
+  }
 }
 
 .progress__image {
   position: absolute;
   bottom: 0;
   right: 0;
+  @media (max-width: 320px) {
+    display: none;
+  }
 }
 
 .card__title {
@@ -48,9 +93,24 @@
     font-family: "poppins";
     font-size: 18px;
     font-weight: 600;
-    padding: 6px 22px;
+    padding: 6px 20px;
     background: #fff;
     border-radius: 10px;
+    @media (max-width: 350px) {
+      width: 200px;
+      font-size: 15px; 
+    padding: 6px 15px;
+    }
+    @media (max-width: 300px) {
+      width: 180px;
+    font-size: 13px; 
+    padding: 6px 12px;
+    }
+    @media (max-width: 270px) {
+      width: 160px;
+    font-size: 11px; 
+    padding: 4px 10px;
+    }
   }
 }
 
@@ -59,6 +119,9 @@
   align-items: center;
   gap: 40px;
   margin: 14px 0 16px;
+  @media (max-width: 400px) {
+    justify-content: space-between;
+  }
 
   &__date {
     display: flex;
@@ -68,17 +131,41 @@
     font-family: "poppins";
     font-size: 14px;
     font-weight: 400;
+    @media (max-width: 350px) {
+      font-size: 11px;
   }
+    @media (max-width: 310px) {
+      font-size: 10px;
+  }
+    @media (max-width: 290px) {
+      font-size: 8px;
+  }
+    @media (max-width: 270px) {
+      font-size: 6px;
+  }
+}
 
-  &__time {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    color: #fff;
-    font-family: "poppins";
-    font-size: 14px;
-    font-weight: 400;
+&__time {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #fff;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 400;
+  @media (max-width: 350px) {
+    font-size: 11px;
   }
+  @media (max-width: 310px) {
+    font-size: 10px;
+  }
+  @media (max-width: 290px) {
+    font-size: 8px;
+  }
+  @media (max-width: 270px) {
+    font-size: 6px;
+  }
+}
 }
 
 .card__range {
@@ -100,6 +187,9 @@
   font-family: "poppins";
   font-size: 13px;
   font-weight: 600;
+  @media (max-width: 300px) {
+    font-size: 10px;
+  }
 }
 
 .card__rangeNumber {
@@ -117,4 +207,13 @@
   font-family: "poppins";
   font-size: 16px;
   font-weight: 400;
+  @media (max-width: 350px) {
+    font-size: 13px; 
+    }
+  @media (max-width: 300px) {
+    font-size: 11px; 
+    }
+  @media (max-width: 280px) {
+    font-size: 9px; 
+    }
 }
