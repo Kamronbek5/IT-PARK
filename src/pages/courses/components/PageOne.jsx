@@ -25,7 +25,7 @@ const PageOne = () => {
          </Spin>
         </div>
         :
-        <div className="page-one">
+        <div className="page-one resp__contain">
         <div className="progress__link">
           <Link to={"/"}>{translate("main")}</Link> /
           <Link to={"/courses"}>{translate("mycou")}</Link>

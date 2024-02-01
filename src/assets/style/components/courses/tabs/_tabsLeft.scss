@@ -1,3 +1,9 @@
 .page-one__tabs {
     max-width: 800px;
 }
+
+:where(.css-dev-only-do-not-override-mtd4dw).ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap {
+    @media (max-width: 500px) {
+        justify-content: space-evenly;
+    }
+}
