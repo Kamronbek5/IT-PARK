@@ -2,12 +2,19 @@
 .table {
     display: flex;
     gap: 52px;
+    @media (max-width: 500px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .ant-picker-calendar {
     width: 800px;
     height: 880px;
     border-radius: 20px;
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .ant-picker-calendar-header {
@@ -27,42 +34,62 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding: 32px 32px 32px 32px;
+        padding: 32px;
+        @media (max-width: 500px) {
+            padding: 10px;
+    }
         &__day {
             display: flex;
             align-items: center;
             gap: 30px;
+            justify-content: space-between;
         }
         &__title{
             color: #A098AE;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
+            @media (max-width: 350px) {
+                font-size: 14px;
+           }
+            @media (max-width: 305px) {
+                font-size: 12px;
+           }
+           @media (max-width: 250px) {
+                font-size: 10px;
+           }
+           @media (max-width: 227px) {
+                font-size: 8px;
+           }
         }
-        .day{
+        .day, .day1, .day2{
             color: #FFF;
             font-size: 14px;
             font-weight: 600;
             padding: 14px 15px;
             border-radius: 8px;
             background: #374557;
+            @media (max-width: 350px) {
+                padding: 11px 12px;
+                font-size: 12px;
+           }
+           @media (max-width: 305px) {
+               padding: 9px 10px;
+                font-size: 10px;
+           }
+           @media (max-width: 270px) {
+               padding: 8px 8px;
+                font-size: 8px;
+           }
+           @media (max-width: 220px) {
+               padding: 8px 6px;
+                font-size: 7px;
+           }
         }
         .day1{
-            color: #FFF;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 14px 15px;
-            border-radius: 8px;
             background: #166199;
-            margin-left: 2px;
         }
         .day2{
-            color: #FFF;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 14px 15px;
-            border-radius: 8px;
-            background: #FEC64F    ;
-            margin-left: 10px;
+            background: #FEC64F;
         }
     }
     .courses__title {
@@ -70,12 +97,19 @@
         color:  #374557;
         font-size: 24px;
         font-weight: 700;
-        margin-bottom: 15px;
+        @media (max-width: 500px) {
+            margin: 35px 0 15px 0;
+            font-size: 18px;
+           }
     }
 
     .course__date__parent {
         display: flex;
-        align-items: center;
+        @media (max-width: 325px) {
+            align-items: normal;
+            flex-direction: column;  
+            gap: 5px;
+         }
     }
 
     .course {
@@ -84,11 +118,23 @@
 background: var(--Color-White, #FFF);
 padding: 24px 50px 8px 40px;
 margin-bottom: 24px;
+@media (max-width: 400px) {
+    padding: 24px 20px 8px 40px;
+           }
         &__title {
             color: var(--Color-Black, #374557);
             font-size: 18px;
             font-weight: 600;
             margin-bottom: 16px;
+            @media (max-width: 324px) {
+            font-size: 15px;
+           }
+            @media (max-width: 284px) {
+            font-size: 12px;
+           }
+            @media (max-width: 247px) {
+            font-size: 10px;
+           }
         }
         &__date {
             display: flex;
@@ -97,30 +143,72 @@ margin-bottom: 24px;
             &__icon {
                 color: #A098AE;
                 font-size: 24px;
+                @media (max-width: 380px) {
+                    font-size: 20px;
+           }
+                @media (max-width: 330px) {
+                    font-size: 17px;
+           }
+                @media (max-width: 306px) {
+                    font-size: 15px;
+           }
+        }
+        &__name {
+            color: var(--Color-Gray-1, #A098AE);
+            font-size: 11px;
+            font-weight: 400;
+            @media (max-width: 380px) {
+                font-size: 9px;
+       }
+            @media (max-width: 350px) {
+           font-size: 13px;
+        }
             }
-            &__name {
-                color: var(--Color-Gray-1, #A098AE);
+        }
+        &__name {
+            @media (max-width: 400px) {
+                font-size: 13px;
+           }
+            @media (max-width: 280px) {
                 font-size: 11px;
-                font-weight: 400;
-            }
+           }
+            @media (max-width: 250px) {
+                font-size: 9px;
+           }
         }
         .px {
             height: 16px;
             background: #DBDBDB;
             width: 1px;
             margin: 0 16px 0 24px;
+            @media (max-width: 325px) {
+                display: none;
+            }
         }
         &__profil {
             margin-top: 35px;
             display: flex;
             gap: 8px;
             align-items: center;
+            @media (max-width: 325px) {
+            margin-top: 12px;
+           }
         }
         &__icon {
             width: 32px;
             height: 32px;
             background-color: #DBDBDB;
             border-radius: 8px;
+            @media (max-width: 325px) {
+                width: 25px;
+                height: 25px;
+                border-radius: 5px;
+           }
+            @media (max-width: 280px) {
+                width: 20px;
+                height: 20px;
+                border-radius: 5px;
+           }
         }
         &::before {
             position: absolute;
@@ -131,6 +219,21 @@ margin-bottom: 24px;
             height: 179px;
             border-radius: 16px 0px 0px 16px;
             background: var(--Color-Black, #374557);
+            @media (max-width: 325px) {
+                height: 163px;  
+           }
+            @media (max-width: 305px) {
+                height: 158px;  
+           }
+            @media (max-width: 284px) {
+                height: 154px;  
+           }
+            @media (max-width: 280px) {
+                height: 148px;  
+           }
+            @media (max-width: 247px) {
+                height: 145px;  
+           }
         }
         &:nth-child(2)::before{
             background: #166199;

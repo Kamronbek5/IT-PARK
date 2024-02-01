@@ -12,21 +12,20 @@ const TablePage = () => {
     },2000)
   },[])
   return (
-    <div>
-      {
-        loading ? 
-        <div className="Loading">
-          <Spin tip="Loading" size="large">
-        <div className="content" />
-         </Spin>
-        </div>
-        :
-        <div className='table'>
-        <Tableleft/>
-        <Tableright/>
+      <div>
+          {loading ? (
+              <div className='Loading'>
+                  <Spin tip='Loading' size='large'>
+                      <div className='content' />
+                  </Spin>
+              </div>
+          ) : (
+              <div className='table resp__contain'>
+                  <Tableleft />
+                  <Tableright />
+              </div>
+          )}
       </div>
-      }
-    </div>
   );
 }
 
