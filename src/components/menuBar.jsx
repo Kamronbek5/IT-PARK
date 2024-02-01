@@ -43,7 +43,7 @@ const MenuBar = ({ onFalse }) => {
                   open={opend}>
                   <div className='root__menu'>
                       {rootList.map((item) => (
-                          <Link
+                          <Link onClick={() => onClose()}
                               to={item.path}
                               className='root__item'
                               key={item.id}>
