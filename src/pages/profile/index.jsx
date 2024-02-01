@@ -21,7 +21,7 @@ const ProfilePage = () => {
          </Spin>
         </div>
         :
-        <div className="profilcontain profil">
+        <div className="profilcontain profil resp__contain">
         <Profileft/>
         <Profilright/>
       </div>

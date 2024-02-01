@@ -45,9 +45,6 @@ const Profilright = () => {
                       />
                   </Space>
                   <div className='profilright__current__UI__right'>
-                      <p className='profilright__current__UI__right__text'>
-                          {translate("class")}
-                      </p>
                       <h1 className='profilright__current__UI__right__title'>
                           UI Design Beginner
                       </h1>
@@ -68,9 +65,6 @@ const Profilright = () => {
                       />
                   </Space>
                   <div className='profilright__current__UI__right'>
-                      <p className='profilright__current__UI__right__text'>
-                          {translate("class")}
-                      </p>
                       <h1 className='profilright__current__UI__right__title'>
                           UX Research
                       </h1>
