@@ -11,7 +11,7 @@
 .modal__btn {
   display: flex;
   flex-direction: column;
-  @include adaptive-value(gap,20,10,1)
+  @include adaptive-value(gap, 20, 10, 1);
 }
 
 .user-modal {
@@ -19,21 +19,24 @@
   top: 9%;
   background: #fff;
   width: 300px;
-  height: 150px;
+  height: 200px;
   border-radius: 12px;
   right: 1%;
-  @media (max-width: 500px){
-    width: 100%;
-  right: 0%;
-    height: 200px;
-   }
+  @media (max-width: 500px) {
+    width: 90%;
+    right: 5%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__logo {
     width: 40px;
     height: 40px;
     background: #8e8d8d;
     border-radius: 8px;
-    margin:20px auto 10px auto;
+    margin: 20px auto 10px auto;
   }
 
   &__desc {
@@ -53,30 +56,30 @@
     margin: 0 auto;
     text-align: center;
     border-radius: 8px;
-    
   }
 }
 .Link {
-       width: 100%;
-       color: #fff;
-       font-size: 16px;
-       font-family: 'poppins';
-   }
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-family: "poppins";
+}
 
-.modallang{
-   display: none;
-   @media (max-width: 500px){
+.modallang {
+  display: none;
+  @media (max-width: 500px) {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
-   }
+    background: transparent;
+  }
 }
 
 .modalicons {
   display: none;
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     display: block;
-   }
+  }
 }
 
 .modalicons__list {
@@ -84,4 +87,11 @@
   justify-content: center;
   margin-bottom: 15px;
   gap: 10px;
+}
+
+.logout-btn {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "poppins";
 }
