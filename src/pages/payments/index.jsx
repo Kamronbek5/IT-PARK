@@ -12,21 +12,20 @@ const PaymentsPage = () => {
     },2000)
   },[])
   return (
-    <div>
-      {
-        loading ? 
-        <div className="Loading">
-          <Spin tip="Loading" size="large">
-        <div className="content" />
-         </Spin>
-        </div>
-        :
-        <div>
-        <Course1/>
-        <Course2/>
+      <div>
+          {loading ? (
+              <div className='Loading'>
+                  <Spin tip='Loading' size='large'>
+                      <div className='content' />
+                  </Spin>
+              </div>
+          ) : (
+              <div className='resp__contain'>
+                  <Course1 />
+                  <Course2 />
+              </div>
+          )}
       </div>
-      }
-    </div>
   );
 }
 

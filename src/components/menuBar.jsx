@@ -36,10 +36,11 @@ const MenuBar = ({ onFalse }) => {
           </button>
           <div className='menuBar__icons'>
               <Drawer
-                  title={<img src={RootLogo} className='drawerlogo' alt='' />}
+                  title={<img src={RootLogo} className='drawerlogo' />}
                   onClose={onClose}
                   placement='left'
                   width='80%'
+                  closable={false}
                   open={opend}>
                   <div className='root__menu'>
                       {rootList.map((item) => (
@@ -81,7 +82,6 @@ const MenuBar = ({ onFalse }) => {
           {open &&
               createPortal(
                   <UserModal
-                      onFalse={onFalse}
                       onCancel={() => setOpen(false)}
                   />,
                   document.body

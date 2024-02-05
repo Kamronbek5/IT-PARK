@@ -1,7 +1,7 @@
 const Course2Img = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={289}
+    width={274}
     height={185}
     fill="none"
     {...props}
