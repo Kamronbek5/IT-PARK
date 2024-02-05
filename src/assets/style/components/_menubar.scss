@@ -47,6 +47,11 @@
   background-color: #166199;
 }
 
+:where(.css-dev-only-do-not-override-mtd4dw).ant-drawer .ant-drawer-title {
+  display: flex;
+  justify-content: center;
+}
+
 .drawerlogo {
   width: 200px;
   @media (max-width: 350px) {

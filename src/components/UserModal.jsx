@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 import { LanguageContext } from "../context/languageContext";
 import { BellOutlined, MessageOutlined, SettingOutlined } from "@ant-design/icons";
 
-const UserModal = ({ onCancel, onFalse}) => {
+const UserModal = ({onCancel}) => {
     const { language, setLanguage } = useContext(LanguageContext);
 const handlyChange = (event) => {
   localStorage.setItem("language", event.target.value);
@@ -34,9 +33,6 @@ const handlyChange = (event) => {
                     <i className='modalicons'>
                         <SettingOutlined />
                     </i>
-                </div>
-                <div onClick={() => onFalse()} className='user-modal__btn'>
-                    <Link className='Link'>Login</Link>
                 </div>
             </div>
         </div>
