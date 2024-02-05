@@ -67,11 +67,13 @@
 
 .modallang {
   display: none;
+  outline: none;
   @media (max-width: 500px) {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
     background: transparent;
+    outline: none;
   }
 }
 
