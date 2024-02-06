@@ -39,6 +39,7 @@ const Profilright = () => {
               <div className='profilright__current__UI'>
                   <Space wrap>
                       <Progress
+                          width={105}
                           strokeLinecap='butt'
                           type='circle'
                           percent={80}
@@ -59,6 +60,7 @@ const Profilright = () => {
               <div className='profilright__current__UI'>
                   <Space wrap>
                       <Progress
+                          width={105}
                           strokeLinecap='butt'
                           type='circle'
                           percent={62}
@@ -79,7 +81,7 @@ const Profilright = () => {
           </div>
           <div className='Prog'>
               <div className='Prog__title'>{translate("progr")}</div>
-              <Progress percent={30} />
+              <Progress width={"500px"} percent={30} />
               <Progress percent={50} status='active' />
               <Progress percent={70} status='exception' />
               <Progress percent={100} />

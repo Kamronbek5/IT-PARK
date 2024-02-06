@@ -1,9 +1,15 @@
 .finished__card {
   background: #374557;
-  width: 385px;
+  width: 330px;
   border-radius: 14px;
   padding: 20px 21px;
   position: relative;
+  @media (min-width: 1410px) {
+    width: 350px;
+  }
+  @media (min-width: 1550px) {
+    width: 400px;
+  }
   @media (max-width: 430px) {
     width: 350px;
   }

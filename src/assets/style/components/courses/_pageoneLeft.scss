@@ -2,8 +2,13 @@
   &__video {
     display: flex;
     flex-direction: column;
-    align-items: center;
     iframe {
+      @media (min-width: 1410px) {
+        width: 800px;
+      }
+      @media (min-width: 1560px) {
+        width: 900px;
+      }
       border-radius: 14px;
       @media (max-width: 500px) {
         width: 100%;
@@ -15,7 +20,7 @@
   &__title {
     color: #374557;
     font-family: 'poppins';
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     margin: 12px 0 30px;
     @media (max-width: 500px) {
