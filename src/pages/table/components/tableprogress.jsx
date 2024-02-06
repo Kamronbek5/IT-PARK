@@ -13,9 +13,6 @@ const ProgressComp2 = () => {
   const translate = useLanguage()
   return (
     <div className="progress">
-      <div className="progress__title">
-        <h2>{translate("jar")}</h2>
-      </div>
       <div className="progress__cards">
         {progress2.map((item) => (
           <Link to={"/page-one"} key={item.id}>

@@ -1,5 +1,11 @@
 .page-one__tabs {
-    max-width: 800px;
+    max-width: 690px;
+    @media (min-width: 1410px) {
+        width: 800px;
+    }
+    @media (min-width: 1560px) {
+        width: 900px;
+      }
 }
 
 :where(.css-dev-only-do-not-override-mtd4dw).ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap {

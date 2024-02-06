@@ -7,8 +7,8 @@ const PageOneLeft = () => {
     <div className="page-one__left">
       <div className="page-one__left__video">
         <iframe
-          width="800"
-          height="422"
+          width="690"
+          height="400"
           src="https://www.youtube.com/embed/dt9DqqIOCi8"
           title="#1 WEB DASTUR. WEB SAYT YOZAMIZ"
           frameborder="0"
