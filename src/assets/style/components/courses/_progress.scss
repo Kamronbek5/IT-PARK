@@ -40,11 +40,11 @@
   @media (min-width: 1410px) {
     width: 350px;
   }
+  @media (max-width: 500px) {
+    width: 350px;
+  }
   @media (min-width: 1550px) {
     width: 400px;
-  }
-  @media (max-width: 430px) {
-    width: 350px;
   }
   @media (max-width: 400px) {
     width: 320px;
@@ -62,7 +62,6 @@
     width: 200px;
   }
 }
-
 .ant-progress-outer {
   width: 270px !important;
   @media (min-width: 1410px) {

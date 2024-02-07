@@ -1,30 +1,12 @@
 import { Link } from "react-router-dom";
 import PageOneLeft from "./PageOneLeft";
 import PageOneRight from "./PageOneRight";
-import { useEffect, useState } from "react";
-import { Spin } from "antd";
 import useLanguage from "../../../hooks/useLanguage";
 
 
 const PageOne = () => {
   const translate = useLanguage()
-  const [loading , setloading] = useState(false)
-  useEffect(() => {
-    setloading(true)
-    setTimeout(() => {
-      setloading(false)
-    },3000)
-  },[])
   return (
-    <div>
-      {
-        loading ? 
-        <div className="Loading">
-          <Spin tip="Loading" size="large">
-        <div className="content" />
-         </Spin>
-        </div>
-        :
         <div className="page-one resp__contain">
         <div className="progress__link">
           <Link to={"/"}>{translate("main")}</Link> /
@@ -40,8 +22,6 @@ const PageOne = () => {
           </div>
         </div>
       </div>
-      }
-    </div>
   );
 };
 

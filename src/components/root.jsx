@@ -104,7 +104,7 @@ const Root = () => {
                       <i className='root__item__icon'>
                           <CalendarOutlined />
                       </i>
-                      <h3 className='root__item__title'>Mening kurslarim</h3>
+                      <h3 className='root__item__title'>Dars jadvali</h3>
                   </Link>
                   <Link
                       style={{
