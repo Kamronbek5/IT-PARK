@@ -29,7 +29,7 @@
 .root__menu {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 7px;
   margin: 34px auto;
   @media (max-width: 500px) {
     margin: 20px auto;
@@ -42,10 +42,10 @@
   gap: 14px;
   color: #a098ae;
   font-size: 15px;
-  padding: 13px 18px;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 16px;
-  transition: 0.5s;
+  transition: 0.7s;
   @media (max-width: 500px) {
     font-size: 20px;
     padding: 10px 10px;
@@ -57,12 +57,6 @@
   @media (max-width: 230px) {
     padding: 10px 10px;
     font-size: 12px;
-  }
-
-  &:hover {
-    background: #166199;
-    color: #fff;
-    box-shadow: 0px 20px 50px 0px rgba(55, 69, 87, 0.1);
   }
 }
 

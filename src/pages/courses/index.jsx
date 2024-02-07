@@ -1,31 +1,11 @@
-import HeaderComp from './components/HeaderComp';
-import { useEffect, useState } from "react";
-import { Spin } from "antd";
+import HeaderComp from "./components/HeaderComp";
 
 const CoursesPage = () => {
-  const [loading , setloading] = useState(false)
-  useEffect(() => {
-    setloading(true)
-    setTimeout(() => {
-      setloading(false)
-    },2000)
-  },[])
-  return (
-    <div>
-      {
-        loading ? 
-        <div className="Loading">
-          <Spin tip="Loading" size="large">
-        <div className="content" />
-         </Spin>
-        </div>
-        :
+    return (
         <div>
-        <HeaderComp/>
-      </div>
-      }
-    </div>
-  );
-}
+            <HeaderComp />
+        </div>
+    );
+};
 
 export default CoursesPage;
